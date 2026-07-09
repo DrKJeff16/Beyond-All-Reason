@@ -1,4 +1,3 @@
 ---@meta
 
----@class SpectatorHudKnobVAO
----@field [string] any
+---@alias SpectatorHudKnobVAO table<string, any>
