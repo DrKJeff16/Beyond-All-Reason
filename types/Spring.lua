@@ -1,3 +1,5 @@
+---@meta
+
 ---@class UnitScriptTable
 ---@field CallAsUnit fun(unitID: integer, fn: function, ...: any): any
 ---@field WaitForMove fun(pieceNum: integer, axis: integer)
@@ -58,7 +60,7 @@
 
 ---@class UnitWrapper
 ---@field unitDefId string
----@field unitDef table?
+---@field unitDef? table
 ---@field [string] any
 
 --- BAR extends engine `ObjectRenderingTable` in `luarules/Utilities/unitrendering.lua`.
