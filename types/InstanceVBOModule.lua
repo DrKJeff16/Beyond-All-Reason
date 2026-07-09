@@ -1,4 +1,3 @@
 ---@meta
 
----@class InstanceVBOModule
----@field [string] any
+---@alias InstanceVBOModule table<string, any>
