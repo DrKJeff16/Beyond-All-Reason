@@ -12,20 +12,32 @@
 ---@field myName string
 ---@field instanceIDtoIndex table<any, integer>
 ---@field indextoInstanceID table<integer, any>
----@field indextoUnitID table<integer, integer>?
----@field unitIDattribID integer?
+---@field indextoUnitID? table<integer, integer>
+---@field unitIDattribID? integer
 ---@field layout table
 ---@field dirty boolean
 ---@field numVertices integer
 ---@field primitiveType integer
----@field VAO VAO?
----@field vertexVBO VBO|any?
----@field indexVBO VBO|any?
----@field clearInstanceTable fun(self: InstanceVBOTable)
----@field makeVAOandAttach fun(self: InstanceVBOTable, vertexVBO: any?, instanceVBO: any?, indexVBO: any?): any
----@field Draw fun(self: InstanceVBOTable)
----@field draw fun(self: InstanceVBOTable, primitiveType: integer?)
----@field compact fun(self: InstanceVBOTable)
----@field Delete fun(self: InstanceVBOTable)
----@field debug boolean?
+---@field VAO? VAO
+---@field vertexVBO? VBO|any
+---@field indexVBO? VBO|any
+---@field debug? boolean
 ---@field [string] any
+local InstanceVBOTable = {}
+
+---@param vertexVBO? any
+---@param instanceVBO? any
+---@param indexVBO? any
+---@return any
+function InstanceVBOTable:makeVAOandAttach(vertexVBO, instanceVBO, indexVBO) end
+
+function InstanceVBOTable:compact() end
+
+function InstanceVBOTable:clearInstanceTable() end
+
+function InstanceVBOTable:Draw() end
+
+---@param primitiveType? integer
+function InstanceVBOTable:draw(primitiveType) end
+
+function InstanceVBOTable:Delete() end
