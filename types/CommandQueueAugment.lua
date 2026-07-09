@@ -1,4 +1,3 @@
 ---@meta
 
----@class CommandQueueAugment
----@field [string] any
+---@alias CommandQueueAugment table<string, any>
