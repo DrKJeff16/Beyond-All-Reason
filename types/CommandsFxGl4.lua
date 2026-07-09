@@ -1,4 +1,3 @@
 ---@meta
 
----@class CommandsFxGl4
----@field [string] any
+---@alias CommandsFxGl4 table<string, any>
