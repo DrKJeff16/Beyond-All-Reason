@@ -1,10 +1,22 @@
 ---@meta
 
 ---@class BarLuaShader
----@field Activate fun(self)
----@field Deactivate fun(self)
----@field SetUniform fun(self, name: string, ...: number|boolean)
----@field SetUniformInt fun(self, name: string, ...: integer)
----@field Initialize fun(self): boolean
----@field Finalize fun(self)
 ---@field [string] any
+local BarLuaShader = {}
+
+function BarLuaShader:Activate() end
+
+function BarLuaShader:Deactivate() end
+
+---@param name string
+---@param ... number|boolean
+function BarLuaShader:SetUniform(name, ...) end
+
+---@param name string
+---@param ... integer
+function BarLuaShader:SetUniformInt(name, ...) end
+
+---@return boolean
+function BarLuaShader:Initialize() end
+
+function BarLuaShader:Finalize() end
