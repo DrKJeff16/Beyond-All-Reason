@@ -1,4 +1,3 @@
 ---@meta
 
----@class TeamStatsHistoryAugment
----@field [string] any
+---@alias TeamStatsHistoryAugment table<string, any>
