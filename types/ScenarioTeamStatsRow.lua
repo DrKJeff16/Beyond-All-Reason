@@ -1,4 +1,3 @@
 ---@meta
 
----@class ScenarioTeamStatsRow
----@field [string] any
+---@alias ScenarioTeamStatsRow table<string, any>
