@@ -2,7 +2,7 @@
 
 ---@class Widget : Addon, RulesUnsyncedCallins
 ---@field [string] any
----@field MousePress fun(self, x: number, y: number, button: number, ...: any): (boolean|integer)?
+---@field MousePress? fun(self, x: number, y: number, button: number, ...: any): (boolean|integer)
 ---@see Callins
 ---@see UnsyncedCallins
 
