@@ -1,4 +1,3 @@
 ---@meta
 
----@class BarLuaShaderModule
----@field [string] any
+---@alias BarLuaShaderModule table<string, any>
